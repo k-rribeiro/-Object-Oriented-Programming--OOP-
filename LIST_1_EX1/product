@@ -1,0 +1,67 @@
+public class produto {
+/* no exercicio é solicitado que nesta classe devemos declarar as variaveis deixando 
+claro qual é o valor maximo e o valor minimimo que nosso estoque aguenta*/
+    private String Nome;
+    private float Preco;
+    private int Qnt;
+    //utilizamos esse final pois assim não se é possivel alterar o valor
+    final int MAXestoque = 20000;
+    final int MINestoque = 100;
+
+    //aqui vamos iniciar nossa classe e as variaveis
+    public  produto (String Nome, float Preco, int Qnt){
+        //no netbeans
+        /*Nome = umNome;
+        Preco = umPreco;
+        Qnt = umaQnt;*/
+
+        //no vs code
+        this.Nome = Nome;
+        this.Preco = Preco;
+        this.Qnt = Qnt;
+
+        //veriguar se de fato funcionou
+        System.out.println("inicialização feita com sucesso");
+    }
+
+    //agora fazer os get para recebermos sua informação
+    // com o netbeans( o software utilizado em aula) consegue fazer essas partes do codigo com "insert code"
+    public String getNome(){
+        return Nome;
+    }
+
+    public float getPreco(){
+        return Preco;
+    }
+
+    public int getQnt(){
+        return Qnt;
+    }
+
+    //para adicionar um ou mais produtos
+    public void adiciona (int umaQnt){
+        if (Qnt+umaQnt > MAXestoque){
+            //atalho para a soma e atribuição ao msm tempo, ex:Qnt = Qnt + Quantidade
+            Qnt+=umaQnt;
+        }
+        else {
+            System.out.println("Ultrapassa a capacidade maxima do estoque");
+        }
+    }
+
+    //para remover quantidades de produtos do estoque
+    public void remove (int umaQnt){
+        if (Qnt+umaQnt > MINestoque){
+            //atalho para a soma e atribuição ao msm tempo, ex:Qnt = Qnt + Quantidade
+            Qnt-=umaQnt;
+        }
+        else {
+            System.out.println("O estoque não pode armazenar menos que 100");
+        }
+    }
+
+    //uma função para printar todas as informações dos produtos solicitados quando solicitado
+    public String toString(){
+        return("nome do produto: " +Nome+ " preço:"+Preco+ " Quantidade: "+Qnt);
+    }
+}
