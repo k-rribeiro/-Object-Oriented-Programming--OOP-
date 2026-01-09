@@ -1,4 +1,12 @@
 # -Object Oriented Programming-(OOP)
-In this repository will have tasks from the discipline 'object oriented programming' using Java, given by USP - São Carlos at the Instituto de Ciências Matemáticas e de Computação (ICMC).
+This repository contains assignments and exercises from the Object-Oriented Programming course, taught at the University of São Paulo (USP) — São Carlos campus, at the Institute of Mathematical and Computer Sciences (ICMC). All implementations are developed in Java.
 
-The idea of this class is learn  about object oriented programming and object oriented software development concepts, with teaching the basic, that it is the encapsulation and information hiding; implementation and behavior separation; classes and subclasses; Polymorphism; Class hierarchy; Class collections and iteration methods.
+The course focuses on the fundamental principles of object-oriented programming and object-oriented software development, including:
+  - Encapsulation and information hiding;
+  - Separation of implementation and behavior;
+  - Classes and subclasses;
+  - Polymorphism;
+  - Class hierarchies;
+  - Collections and iteration mechanisms.
+
+The goal of this repository is to document the learning process and provide practical examples of OOP concepts applied in Java.
